@@ -18,22 +18,29 @@ function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-stone-200 bg-white/88 shadow-sm backdrop-blur-md"
-          : "bg-slate-950/25 backdrop-blur-sm"
+          ? "bg-white/80 backdrop-blur-md border-b border-gray-200 shadow-sm"
+          : "bg-black/30 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-1">
+
+        {/* LOGO */}
         <Link to="/" className="flex items-center">
           <img
             src={logo}
             alt="Reforplaz"
-            className="h-12 object-contain transition hover:scale-105 md:h-14"
+            className={`h-20 object-contain transition hover:scale-105 ${
+              scrolled
+                ? "drop-shadow-[0_0_4px_rgba(0,0,0,0.4)]"
+                : "drop-shadow-[0_0_8px_rgba(255,255,255,0.7)]"
+            }`}
           />
         </Link>
 
+        {/* MENU */}
         <ul
-          className={`hidden items-center gap-8 text-sm font-semibold uppercase tracking-[0.2em] transition-colors duration-300 lg:flex ${
-            scrolled ? "text-slate-800" : "text-white"
+          className={`hidden md:flex items-center gap-12 text-[1.35rem] font-semibold transition-colors duration-300 ${
+            scrolled ? "text-gray-800" : "text-white"
           }`}
         >
           {["Inicio", "Nosotros", "Servicios", "Proyectos", "Contacto"].map((item) => (
@@ -44,22 +51,24 @@ function Navbar() {
               >
                 {item}
 
+                {/* underline animado */}
                 <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
               </Link>
             </li>
           ))}
         </ul>
 
+        {/* BOTON */}
         <Link to="/contacto">
-          <span
+          <button
             className={`px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300 ${
               scrolled
-                ? "bg-slate-950 text-white hover:scale-105"
-                : "bg-white/90 text-slate-950 hover:bg-white hover:scale-105"
+                ? "bg-gradient-to-r from-blue-500 to-cyan-400 text-white hover:scale-105"
+                : "bg-white/90 text-black hover:bg-white hover:scale-105"
             }`}
           >
             Cotizar
-          </span>
+          </button>
         </Link>
       </div>
     </nav>

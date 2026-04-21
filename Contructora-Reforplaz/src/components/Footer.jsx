@@ -1,49 +1,60 @@
 import { Link } from "react-router-dom"
+import logo from "../assets/images/logo.png"
 
 function Footer() {
   return (
-    <footer className="border-t border-stone-200 bg-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:px-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
+    <footer className="bg-black text-white pt-16 pb-8">
+
+      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-4 gap-10">
+
+        {/* LOGO + DESCRIPCIÓN */}
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-700">
-            Reforplaz
-          </p>
-          <h3 className="mt-4 max-w-md text-2xl font-semibold text-slate-950">
-            Construimos espacios recreativos, tematicos y funcionales con identidad propia.
-          </h3>
-          <p className="mt-4 max-w-lg text-sm leading-7 text-slate-600">
-            La estructura del sitio ya quedo lista para seguir creciendo con paginas internas,
-            fichas de proyecto y una seccion de contacto mas completa.
+          <img src={logo} alt="Reforplaz" className="h-14 mb-4" />
+          <p className="text-gray-400 text-sm">
+            Diseñamos y construimos parques acuáticos, esculturas y espacios recreativos que transforman experiencias.
           </p>
         </div>
 
+        {/* ENLACES */}
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
-            Navegacion
-          </p>
-          <div className="mt-5 flex flex-col gap-3 text-sm text-slate-700">
-            <Link to="/">Inicio</Link>
-            <Link to="/nosotros">Nosotros</Link>
-            <Link to="/servicios">Servicios</Link>
-            <Link to="/proyectos">Proyectos</Link>
-          </div>
+          <h3 className="font-semibold mb-4">Enlaces</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/nosotros">Nosotros</Link></li>
+            <li><Link to="/servicios">Servicios</Link></li>
+            <li><Link to="/proyectos">Proyectos</Link></li>
+            <li><Link to="/contacto">Contacto</Link></li>
+          </ul>
         </div>
 
+        {/* SERVICIOS */}
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
-            Contacto
-          </p>
-          <div className="mt-5 space-y-3 text-sm leading-7 text-slate-700">
-            <p>Atencion personalizada para cotizaciones y proyectos especiales.</p>
-            <Link
-              to="/contacto"
-              className="inline-flex rounded-full bg-slate-950 px-5 py-2.5 font-semibold text-white transition hover:bg-slate-800"
-            >
-              Ir a contacto
-            </Link>
-          </div>
+          <h3 className="font-semibold mb-4">Servicios</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>Parques Acuáticos</li>
+            <li>Esculturas</li>
+            <li>Parques Infantiles</li>
+            <li>Infraestructura</li>
+          </ul>
         </div>
+
+        {/* CONTACTO */}
+        <div>
+          <h3 className="font-semibold mb-4">Contacto</h3>
+          <ul className="space-y-2 text-gray-400 text-sm">
+            <li>📞 +591 71512374</li>
+            <li>✉️ reforplaz2015@gmail.com</li>
+            <li>📍 Santa Cruz de la Sierra - Bolivia</li>
+          </ul>
+        </div>
+
       </div>
+
+      {/* LINEA */}
+      <div className="border-t border-white/10 mt-10 pt-6 text-center text-gray-500 text-sm">
+        © 2026 Reforplaz. Todos los derechos reservados.
+      </div>
+
     </footer>
   )
 }
