@@ -28,7 +28,7 @@ function Navbar() {
         <Link to="/" className="flex items-center">
           <img
             src={logo}
-            alt="Reforplaz"
+            alt="Industrias Reforplaz"
             className={`h-20 object-contain transition hover:scale-105 ${
               scrolled
                 ? "drop-shadow-[0_0_4px_rgba(0,0,0,0.4)]"

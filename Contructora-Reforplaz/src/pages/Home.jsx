@@ -34,12 +34,13 @@ function Home() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.95, delay: 0.1 }}
-            className="mx-auto max-w-4xl text-[2.15rem] font-black leading-[0.92] tracking-[-0.07em] text-slate-100 sm:text-[2.7rem] md:text-[3.2rem] lg:text-[3.7rem]"
+            className="relative mx-auto max-w-4xl text-[2.15rem] font-black leading-[0.92] tracking-[-0.07em] text-slate-100 sm:text-[2.7rem] md:text-[3.2rem] lg:text-[3.7rem]"
           >
-            <span className="inline-block rounded-[1rem] border border-white/10 bg-[rgba(4,10,18,0.28)] px-4 py-2 bg-[linear-gradient(180deg,#f4f8fb_0%,#dde6ee_36%,#91a1b2_100%)] bg-clip-text text-transparent shadow-[0_8px_28px_rgba(0,0,0,0.18)] backdrop-blur-[4px] [text-shadow:0_4px_20px_rgba(0,0,0,0.28)]">
+            <span className="pointer-events-none absolute left-1/2 top-1/2 block h-[160%] w-[116%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(4,10,18,0.5)_0%,rgba(4,10,18,0.34)_34%,rgba(4,10,18,0.16)_60%,transparent_80%)] blur-2xl"></span>
+            <span className="relative inline-block rounded-[1rem] border border-white/12 bg-[rgba(4,10,18,0.38)] px-4 py-2 text-white shadow-[0_12px_28px_rgba(0,0,0,0.28)] backdrop-blur-[4px] [text-shadow:0_1px_0_rgba(255,255,255,0.1),0_3px_12px_rgba(0,0,0,0.34)]">
               CREAMOS ESPACIOS QUE
             </span>
-            <span className="mt-5 inline-block rounded-[1rem] border border-slate-300/12 bg-[rgba(4,10,18,0.24)] px-4 py-2 bg-[linear-gradient(180deg,#203a57_0%,#102033_34%,#163553_72%,#355684_100%)] bg-clip-text text-transparent shadow-[0_8px_28px_rgba(0,0,0,0.2)] backdrop-blur-[4px] [text-shadow:0_0_18px_rgba(8,15,26,0.18)]">
+            <span className="relative mt-5 inline-block rounded-[1rem] border border-white/12 bg-[rgba(4,10,18,0.34)] px-4 py-2 text-white shadow-[0_12px_28px_rgba(0,0,0,0.28)] backdrop-blur-[4px] [text-shadow:0_1px_0_rgba(255,255,255,0.08),0_3px_12px_rgba(0,0,0,0.36)]">
               TRANSFORMAN EXPERIENCIAS
             </span>
           </motion.h1>
@@ -48,9 +49,10 @@ function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.28, duration: 0.9 }}
-            className="mx-auto mt-5 max-w-3xl rounded-[1rem] border border-white/10 bg-[rgba(4,10,18,0.2)] px-4 py-2.5 text-[1.02rem] leading-relaxed text-slate-100 backdrop-blur-[3px] md:text-[1.15rem]"
+            className="mx-auto mt-5 max-w-3xl rounded-[1rem] border border-white/10 bg-[rgba(4,10,18,0.34)] px-4 py-2.5 text-[1.02rem] leading-relaxed text-slate-100 backdrop-blur-[4px] md:text-[1.15rem]"
           >
-            Parques acuaticos, esculturas y proyectos unicos que combinan ingenieria, narrativa visual y construccion de alto impacto.
+            Industrias Reforplaz desarrolla parques acuaticos, esculturas y soluciones en
+            fibra de vidrio que combinan ingenieria, identidad visual y alto impacto.
           </motion.p>
 
           <motion.div
@@ -318,7 +320,7 @@ function Home() {
             className="mb-10 max-w-3xl"
           >
             <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
-              Experiencia Reforplaz
+              Industria Reforplaz
             </span>
             <h2 className="mt-4 text-[1.95rem] font-black leading-none tracking-[-0.07em] text-slate-100 md:text-[2.3rem]">
               <span className="block whitespace-nowrap bg-[linear-gradient(135deg,#d7f7ff_0%,#67e8f9_38%,#60a5fa_74%,#fb923c_100%)] bg-clip-text text-transparent">

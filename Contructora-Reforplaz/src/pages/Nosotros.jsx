@@ -22,15 +22,15 @@ const reveal = {
 const pillars = [
   {
     title: "Mision",
-    text: "Desarrollar proyectos con calidad visual, compromiso tecnico y soluciones que inspiren confianza en cada etapa.",
+    text: "Desarrollar soluciones en fibra de vidrio con calidad visual, compromiso tecnico y resultados que inspiren confianza en cada etapa.",
   },
   {
     title: "Vision",
-    text: "Consolidarnos como una empresa referente por su creatividad, cumplimiento y capacidad de transformar ideas en espacios memorables.",
+    text: "Consolidarnos como una industria referente por su creatividad, cumplimiento y capacidad de transformar ideas en soluciones memorables.",
   },
   {
     title: "Valores",
-    text: "Responsabilidad, detalle, trabajo en equipo y pasion por construir resultados bien hechos y bien presentados.",
+    text: "Responsabilidad, detalle, trabajo en equipo y pasion por desarrollar resultados bien hechos y bien presentados.",
   },
 ]
 
@@ -54,14 +54,14 @@ const gallery = [
     image: proyecto4,
     title: "Obras con presencia",
     description:
-      "Espacios construidos para funcionar bien y al mismo tiempo dejar una impresion fuerte.",
+      "Soluciones desarrolladas para funcionar bien y al mismo tiempo dejar una impresion fuerte.",
   },
   {
     id: "05",
     image: proyecto5,
     title: "Detalles que suman valor",
     description:
-      "La diferencia muchas veces esta en el cuidado de los elementos que hacen ver mejor toda la obra.",
+      "La diferencia muchas veces esta en el cuidado de los elementos que hacen ver mejor toda la solucion final.",
   },
   {
     id: "06",
@@ -87,7 +87,7 @@ function Nosotros() {
       <section className="relative overflow-hidden">
         <img
           src={equipoImagen}
-          alt="Nosotros Reforplaz"
+          alt="Nosotros Industrias Reforplaz"
           className="absolute inset-0 h-full w-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,17,29,0.72)_0%,rgba(4,17,29,0.56)_42%,rgba(4,17,29,0.82)_100%)]" />
@@ -112,7 +112,8 @@ function Nosotros() {
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-200/90 md:text-base">
-                Tu inversión se convierte en un espacio que genera orgullo y valor.
+                Industrias Reforplaz transforma ideas en soluciones recreativas y piezas en
+                fibra de vidrio con identidad, calidad y presencia.
               </p>
 
               <div className="mt-3 flex flex-wrap justify-center gap-3">
@@ -147,11 +148,16 @@ function Nosotros() {
               QUIENES SOMOS
             </p>
             <h2 className="mt-3 text-3xl font-bold text-white">
-              MAS QUE CONSTRUIR CREAMOS EXPERIENCIAS MEMORABLES
+              MAS QUE CONSTRUIR, DESARROLLAMOS SOLUCIONES CON IDENTIDAD
             </h2>
             <p className="mt-3 text-sm leading-7 text-slate-200/90 md:text-base">
-              Nacimos con un sueño: transformar espacios en experiencias memorables. Cada proyecto que emprendemos es más que construcción; es la oportunidad de dejar huella, de convertir ideas en realidades que inspiran confianza y orgullo. Nuestro trabajo refleja la pasión de un equipo que cree que la calidad y el detalle pueden cambiar la forma en que las personas disfrutan sus entornos. <br />
-              Creemos que los proyectos hablan por quienes los impulsan. Por eso trabajamos para que cada espacio construido refleje la identidad de nuestros clientes y se convierta en un legado. Nuestra misión no es solo edificar, sino crear lugares que generen orgullo, confianza y experiencias inolvidables.
+              Nacimos con la idea de transformar espacios en experiencias memorables a
+              traves de soluciones en fibra de vidrio. Cada proyecto es una oportunidad
+              de convertir una idea en un resultado visible, funcional y capaz de inspirar
+              confianza y orgullo. <br />
+              Creemos que cada proyecto habla por quienes lo impulsan. Por eso trabajamos
+              para que cada solucion desarrollada refleje la identidad de nuestros clientes
+              y se convierta en un resultado durable, bien ejecutado y memorable.
             </p>
           </div>
 
@@ -191,7 +197,8 @@ function Nosotros() {
             </h2>
           </div>
           <p className="max-w-xl text-sm leading-7 text-slate-300">
-            Explora nuestra galería: espacios diseñados para inspirar confianza y mostrar resultados tangibles.
+            Explora nuestra galeria: soluciones desarrolladas para inspirar confianza y
+            mostrar resultados visibles.
           </p>
         </MotionDiv>
 
@@ -274,7 +281,7 @@ function Nosotros() {
           <div className="relative overflow-hidden rounded-[1.4rem]">
             <img
               src={equipoImagen}
-              alt="Equipo de trabajo de Reforplaz"
+              alt="Equipo de trabajo de Industrias Reforplaz"
               className="h-full min-h-[21rem] w-full object-cover"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(3,9,18,0.02),rgba(3,9,18,0.72))]" />
@@ -288,7 +295,8 @@ function Nosotros() {
               PERSONAS QUE CONSTRUYEN CONFIANZA
             </h2>
             <p className="mt-3 text-sm leading-7 text-slate-200/90 md:text-base">
-              Nuestro equipo convierte retos en resultados, con experiencia y responsabilidad en cada paso.
+              Nuestro equipo transforma retos en soluciones reales, con experiencia,
+              criterio tecnico y responsabilidad en cada etapa.
             </p>
 
             <div className="mt-3 grid gap-4 sm:grid-cols-2">

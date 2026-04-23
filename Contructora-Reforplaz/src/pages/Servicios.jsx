@@ -2,8 +2,8 @@ import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
 import service1 from "../assets/images/proyectos/servicio1.png"
-import service2 from "../assets/images/proyectos/servicio2.jpeg"
-import service3 from "../assets/images/proyectos/servicio3.png"
+import service2 from "../assets/images/proyectos/servicio3.png"
+import service3 from "../assets/images/proyectos/servicio2.jpeg"
 import service4 from "../assets/images/proyectos/servicio4.jpeg"
 import service5 from "../assets/images/proyectos/servicio5.png"
 import service6 from "../assets/images/proyectos/servicio6.jpeg"
@@ -26,7 +26,7 @@ const services = [
     tag: "Convivencia",
     image: service2,
     description:
-      "Creamos areas de juego que equilibran seguridad, color y composicion para convertir cada espacio en un entorno mas vivo, atractivo y mejor aprovechado."
+      "Desarrollamos areas de juego en fibra de vidrio que equilibran seguridad, color y composicion para lograr espacios recreativos mas vivos, atractivos y mejor aprovechados."
   },
   {
     title: "Esculturas y tematizacion",
@@ -61,7 +61,7 @@ const services = [
     tag: "Movimiento",
     image: service7,
     description:
-      "Construimos espacios activos preparados para uso constante, integrando funcionalidad, buena lectura visual y materiales pensados para durar."
+      "Desarrollamos espacios activos preparados para uso constante, integrando funcionalidad, buena lectura visual y materiales pensados para durar."
   },
   {
     title: "Mobiliario complementario",
@@ -76,7 +76,7 @@ const processSteps = [
   {
     step: "01",
     title: "Diseno y propuesta",
-    text: "Analizamos la idea, el espacio y el objetivo del proyecto para construir una solucion clara, viable y alineada con la experiencia que se quiere lograr."
+    text: "Analizamos la idea, el espacio y el objetivo del proyecto para desarrollar una solucion clara, viable y alineada con la experiencia que se quiere lograr."
   },
   {
     step: "02",
@@ -97,7 +97,7 @@ const valuePoints = [
   },
   {
     title: "Alta resistencia",
-    text: "Trabajamos con enfoque constructivo para lograr piezas durables, confiables y preparadas para uso real."
+    text: "Trabajamos con enfoque tecnico y de fabricacion para lograr piezas durables, confiables y preparadas para uso real."
   },
   {
     title: "Acabado con presencia",
@@ -266,7 +266,7 @@ function Servicios() {
                 UN PROCESO CLARO DE PRINCIPIO A FIN
               </h2>
               <p className="mt-4 max-w-xl text-[0.98rem] leading-8 text-slate-300">
-                El servicio no se limita a fabricar una pieza. Buscamos construir una
+                El servicio no se limita a fabricar una pieza. Buscamos desarrollar una
                 respuesta completa, bien pensada y capaz de llegar al resultado final con
                 coherencia tecnica y visual.
               </p>
@@ -355,7 +355,7 @@ function Servicios() {
                 <p className="mt-3 text-[0.98rem] leading-7 text-slate-200">
                   Nuestra mejor manera de demostrar lo que hacemos es mostrar como esas
                   soluciones se convierten en proyectos visibles, funcionales y bien
-                  resueltos dentro del espacio final.
+                  desarrollados dentro del espacio final.
                 </p>
               </div>
 
@@ -382,7 +382,7 @@ function Servicios() {
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[0.98rem] leading-8 text-slate-300">
             Podemos ayudarte a desarrollar una solucion adaptada al tipo de espacio, al
-            uso esperado y a la idea que quieres construir.
+            uso esperado y a la experiencia que quieres implementar.
           </p>
 
           <Link

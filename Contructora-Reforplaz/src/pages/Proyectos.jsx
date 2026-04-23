@@ -81,7 +81,7 @@ const categories = [
     concept: "Soluciones tecnicas",
     icon: "TK",
     description:
-      "Los tanques representan la parte mas tecnica y estructural del portafolio. Son soluciones desarrolladas para responder a necesidades concretas de capacidad, resistencia y confiabilidad, manteniendo un estandar de fabricacion que acompana el resto de la propuesta Reforplaz."
+      "Los tanques representan la parte mas tecnica y estructural del portafolio. Son soluciones desarrolladas para responder a necesidades concretas de capacidad, resistencia y confiabilidad, manteniendo un estandar de fabricacion alineado a la propuesta de Industrias Reforplaz."
   }
 ]
 
@@ -111,11 +111,20 @@ const projectCards = categories.map((category) => {
 
 function Proyectos() {
   const [activeProjectSlug, setActiveProjectSlug] = useState("")
+  const [selectedCategory, setSelectedCategory] = useState("all")
 
   const activeProject = useMemo(
     () => projectCards.find((project) => project.slug === activeProjectSlug) ?? null,
     [activeProjectSlug]
   )
+
+  const filteredProjects = useMemo(() => {
+    if (selectedCategory === "all") {
+      return projectCards
+    }
+
+    return projectCards.filter((project) => project.slug === selectedCategory)
+  }, [selectedCategory])
 
   useEffect(() => {
     if (!activeProject) {
@@ -177,7 +186,36 @@ function Proyectos() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.08),transparent_24%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.08),transparent_20%)]"></div>
 
         <div className="relative mx-auto max-w-7xl space-y-10 px-6 py-14 md:px-8 md:py-16">
-          {projectCards.map((project, index) => {
+          <div className="flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => setSelectedCategory("all")}
+              className={`rounded-full px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.2em] transition duration-300 ${
+                selectedCategory === "all"
+                  ? "border border-cyan-300/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.22),rgba(37,99,235,0.24),rgba(249,115,22,0.16))] text-white shadow-[0_14px_32px_rgba(37,99,235,0.18)]"
+                  : "border border-white/10 bg-white/6 text-slate-300 hover:border-cyan-300/24 hover:text-white"
+              }`}
+            >
+              Todas
+            </button>
+
+            {projectCards.map((project) => (
+              <button
+                key={`${project.slug}-filter`}
+                type="button"
+                onClick={() => setSelectedCategory(project.slug)}
+                className={`rounded-full px-4 py-2 text-[0.72rem] font-semibold uppercase tracking-[0.2em] transition duration-300 ${
+                  selectedCategory === project.slug
+                    ? "border border-cyan-300/30 bg-[linear-gradient(135deg,rgba(34,211,238,0.22),rgba(37,99,235,0.24),rgba(249,115,22,0.16))] text-white shadow-[0_14px_32px_rgba(37,99,235,0.18)]"
+                    : "border border-white/10 bg-white/6 text-slate-300 hover:border-cyan-300/24 hover:text-white"
+                }`}
+              >
+                {project.title}
+              </button>
+            ))}
+          </div>
+
+          {filteredProjects.map((project, index) => {
             const previewPrimary = project.previewImages[0]
             const previewSecondary = project.previewImages.slice(1, 3)
             const isAlternating = index % 2 === 1

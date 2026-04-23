@@ -10,7 +10,7 @@ const contactItems = [
     hint: "Escribenos directamente",
     color: "text-green-400",
     ring: "from-green-400/30 to-emerald-300/10",
-    link: "https://wa.me/59171512374?text=Hola,%20quiero%20cotizar%20un%20proyecto%20con%20Reforplaz."
+    link: "https://wa.me/59171512374?text=Hola,%20quiero%20cotizar%20un%20proyecto%20con%20Industrias%20Reforplaz."
   },
   {
     icon: <FaFacebook size={22} />,
@@ -70,7 +70,7 @@ function Contacto() {
             <div className="flex items-start gap-4">
               <span className="mt-1 h-14 w-px bg-[linear-gradient(180deg,#fb923c_0%,#22d3ee_100%)]"></span>
               <p className="text-lg italic leading-relaxed text-slate-200">
-                Cuentanos tu idea y la convertimos en un proyecto real.
+                Cuentanos tu idea y la convertimos en una solucion real.
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ function Contacto() {
                 Hablemos de lo que quieres construir
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-7 text-slate-400">
-                Completa el formulario y nos pondremos en contacto contigo para darte una respuesta clara y personalizada.
+                Completa el formulario y nos pondremos en contacto contigo para evaluar tu idea y proponerte una respuesta clara y personalizada.
               </p>
             </div>
 
@@ -139,7 +139,7 @@ function Contacto() {
                   Contacto y redes
                 </h2>
                 <p className="mt-3 text-sm leading-7 text-slate-400">
-                  Todas nuestras redes estan activas y funcionan como accesos directos para consultas, seguimiento y contenido.
+                  Todos nuestros canales estan activos y funcionan como accesos directos para consultas, seguimiento y contenido de Industrias Reforplaz.
                 </p>
               </div>
 
@@ -196,7 +196,7 @@ function Contacto() {
                 Santa Cruz de la Sierra - Bolivia
               </h3>
               <p className="mt-2 text-sm leading-7 text-slate-400">
-                Podemos coordinar atencion y seguimiento por medios digitales y redes activas, con respuesta cercana para consultas y cotizaciones.
+                Podemos coordinar atencion y seguimiento por medios digitales y redes activas, con respuesta cercana para consultas, cotizaciones y desarrollo de soluciones.
               </p>
             </div>
           </div>
