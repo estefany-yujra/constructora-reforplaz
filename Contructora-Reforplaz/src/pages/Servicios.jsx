@@ -1,7 +1,6 @@
 import { motion } from "framer-motion"
 import { Link } from "react-router-dom"
 
-import serviceHero from "../assets/images/proyectos/servicios.png"
 import service1 from "../assets/images/proyectos/servicio1.png"
 import service2 from "../assets/images/proyectos/servicio2.jpeg"
 import service3 from "../assets/images/proyectos/servicio3.png"
@@ -114,31 +113,36 @@ function Servicios() {
   return (
     <main className="overflow-hidden bg-[#04101c] text-white">
       <section className="relative isolate overflow-hidden border-b border-white/6">
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,#04101c_0%,#071827_52%,#08111d_100%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.16),transparent_24%),radial-gradient(circle_at_82%_18%,rgba(249,115,22,0.12),transparent_18%)]"></div>
+        <img
+          src={service8}
+          alt="Servicios Reforplaz"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,16,28,0.72)_0%,rgba(4,16,28,0.56)_42%,rgba(4,16,28,0.82)_100%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_24%),radial-gradient(circle_at_82%_18%,rgba(249,115,22,0.1),transparent_18%)]"></div>
 
-        <div className="relative mx-auto max-w-7xl px-6 pb-14 pt-24 md:px-8 md:pb-16 md:pt-28">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div className="relative mx-auto max-w-5xl px-6 pb-10 pt-24 text-center md:px-8 md:pb-12 md:pt-28">
+          <div className="mx-auto max-w-3xl">
             <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75 }}
+              className="mx-auto"
             >
               <div className="inline-flex rounded-full border border-white/10 bg-white/6 px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-cyan-100 backdrop-blur-md">
                 Servicios
               </div>
 
-              <h1 className="mt-5 max-w-[12ch] text-[2.4rem] font-black leading-[0.88] tracking-[-0.08em] text-slate-50 sm:text-[2.9rem] md:text-[3.35rem]">
-                SOLUCIONES QUE SE DISENAN, FABRICAN E INSTALAN BIEN
+              <h1 className="mt-3 text-[2.2rem] font-black leading-none tracking-[-0.07em] text-slate-50 sm:text-[2.8rem] md:text-[3.1rem]">
+                NUESTROS SERVICIOS
               </h1>
 
-              <p className="mt-5 max-w-2xl text-[0.98rem] leading-8 text-slate-300 md:text-[1.04rem]">
-                Desarrollamos servicios en fibra de vidrio para proyectos recreativos,
-                tematicos y estructurales donde la funcionalidad, la presencia visual y la
-                resistencia deben trabajar juntas desde el inicio.
+              <p className="mx-auto mt-3 max-w-2xl text-[0.98rem] leading-8 text-slate-200 md:text-[1.02rem]">
+                Soluciones en fibra de vidrio para proyectos recreativos, tematicos y
+                estructurales con enfoque visual, tecnico y funcional.
               </p>
 
-              <div className="mt-7 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center">
                 <Link
                   to="/contacto"
                   className="rounded-2xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_58%,#fb923c_100%)] px-6 py-3.5 text-sm font-bold uppercase tracking-[0.16em] text-white shadow-[0_16px_42px_rgba(37,99,235,0.3)] transition duration-300 hover:-translate-y-1"
@@ -159,14 +163,14 @@ function Servicios() {
               initial={{ opacity: 0, x: 28 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.85, delay: 0.1 }}
-              className="relative"
+              className="relative hidden"
             >
               <div className="absolute -left-4 -top-4 h-28 w-28 rounded-full bg-cyan-300/18 blur-3xl"></div>
               <div className="absolute -bottom-4 right-4 h-28 w-28 rounded-full bg-orange-400/14 blur-3xl"></div>
 
               <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/6 p-2 shadow-[0_24px_70px_rgba(0,0,0,0.24)] backdrop-blur-sm">
                 <img
-                  src={serviceHero}
+                  src={service1}
                   alt="Resumen visual de servicios Reforplaz"
                   className="h-[330px] w-full rounded-[1.5rem] object-cover md:h-[390px]"
                 />

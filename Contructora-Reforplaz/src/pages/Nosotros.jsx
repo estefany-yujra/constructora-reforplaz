@@ -2,8 +2,6 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 
-import logo from "../assets/images/logo.png"
-import imagenSecundaria from "../assets/images/proyectos/servicios.png"
 import proyecto2 from "../assets/images/proyectos/servicio2.jpeg"
 import proyecto3 from "../assets/images/proyectos/servicio3.png"
 import proyecto4 from "../assets/images/proyectos/servicio4.jpeg"
@@ -87,32 +85,37 @@ function Nosotros() {
   return (
     <main className="bg-[#04111d] text-slate-100">
       <section className="relative overflow-hidden">
+        <img
+          src={equipoImagen}
+          alt="Nosotros Reforplaz"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,17,29,0.72)_0%,rgba(4,17,29,0.56)_42%,rgba(4,17,29,0.82)_100%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(34,211,238,0.1),transparent_22%),radial-gradient(circle_at_left,rgba(249,115,22,0.08),transparent_18%)]" />
 
-        <div className="relative mx-auto max-w-7xl px-6 pb-10 pt-28 md:px-10 md:pb-12">
+        <div className="relative mx-auto max-w-5xl px-6 pb-10 pt-24 text-center md:px-10 md:pb-12 md:pt-28">
           <MotionDiv
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, ease: "easeOut" }}
-            className="grid gap-6 rounded-[1.8rem] border border-white/8 bg-[linear-gradient(145deg,rgba(3,12,23,0.86),rgba(6,28,48,0.82))] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.2)] lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:p-8"
+            className="rounded-[1.8rem] border border-white/8 bg-[linear-gradient(145deg,rgba(3,12,23,0.58),rgba(6,28,48,0.48))] p-6 shadow-[0_18px_50px_rgba(0,0,0,0.2)] backdrop-blur-sm lg:p-8"
           >
-            <div className="max-w-3xl">
+            <div className="mx-auto max-w-3xl">
               <div className="mb-3 inline-flex items-center gap-3 rounded-full border border-cyan-300/15 bg-slate-950/45 px-4 py-2 backdrop-blur-md">
-                <img src={logo} alt="Logo Reforplaz" className="h-7 w-auto object-contain" />
                 <span className="text-xs font-semibold uppercase tracking-[0.3em] text-cyan-100/85">
                   Nosotros
                 </span>
               </div>
 
-              <h1 className="text-3xl font-black leading-tight text-white md:text-5xl">
-                CONFIANZA Y CALIDAD EN CADA PROYECTO
+              <h1 className="text-[2.2rem] font-black leading-none tracking-[-0.07em] text-white md:text-[3.1rem]">
+                SOBRE REFORPLAZ
               </h1>
 
               <p className="mt-3 max-w-2xl text-sm leading-7 text-slate-200/90 md:text-base">
                 Tu inversión se convierte en un espacio que genera orgullo y valor.
               </p>
 
-              <div className="mt-3 flex flex-wrap gap-3">
+              <div className="mt-3 flex flex-wrap justify-center gap-3">
                 <div className="rounded-full border border-white/10 bg-slate-950/45 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-200">
                   Calidad
                 </div>
@@ -133,29 +136,6 @@ function Nosotros() {
                 </a>
               </div>
             </div>
-
-            <MotionDiv
-              initial={{ opacity: 0, scale: 0.96, y: 18 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.75, delay: 0.12, ease: "easeOut" }}
-              className="justify-self-end"
-            >
-              <div className="relative w-full max-w-sm overflow-hidden rounded-[1.75rem] border border-white/10 bg-slate-950/55 p-3 shadow-[0_24px_60px_rgba(0,0,0,0.3)] backdrop-blur-md">
-                <img
-                  src={imagenSecundaria}
-                  alt="Detalle de obra Reforplaz"
-                  className="h-[23rem] w-full rounded-[1.3rem] object-cover"
-                />
-                <div className="absolute inset-x-5 bottom-5 rounded-[1.05rem] border border-white/10 bg-slate-950/70 p-4 backdrop-blur-xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-orange-300">
-                    ESENCIA REFORPLAZ
-                  </p>
-                  <p className="mt-2 text-sm font-bold text-white md:text-base">
-                    Solidez, imagen y cuidado en cada proyecto.
-                  </p>
-                </div>
-              </div>
-            </MotionDiv>
           </MotionDiv>
         </div>
       </section>

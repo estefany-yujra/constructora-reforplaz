@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom"
 import videoBg from "../assets/video/hero.mp4"
 import servicesImage from "../assets/images/servicios.jpg"
 import proyecto1 from "../assets/images/proyecto1.jpg"
@@ -14,17 +15,16 @@ function Home() {
           <source src={videoBg} type="video/mp4" />
         </video>
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.22),transparent_30%),radial-gradient(circle_at_75%_20%,rgba(37,99,235,0.24),transparent_26%),linear-gradient(110deg,rgba(5,10,18,0.9),rgba(9,18,31,0.78)_45%,rgba(4,11,23,0.52)_72%,rgba(4,10,18,0.76))]"></div>
-        <div className="absolute inset-0 bg-black/30 backdrop-blur-[2px]"></div>
-        <div className="absolute left-[6%] top-[18%] h-56 w-56 rounded-full bg-cyan-400/20 blur-3xl"></div>
-        <div className="absolute bottom-[12%] right-[10%] h-72 w-72 rounded-full bg-blue-600/20 blur-3xl"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_26%),radial-gradient(circle_at_78%_18%,rgba(37,99,235,0.16),transparent_24%),linear-gradient(180deg,rgba(4,10,18,0.16)_0%,rgba(4,10,18,0.08)_42%,rgba(4,10,18,0.22)_100%)]"></div>
+        <div className="absolute left-[8%] top-[18%] h-52 w-52 rounded-full bg-cyan-400/14 blur-3xl"></div>
+        <div className="absolute bottom-[14%] right-[10%] h-64 w-64 rounded-full bg-blue-600/14 blur-3xl"></div>
 
-        <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-start px-6 pb-10 pt-28 text-white md:px-8 md:pt-32">
+        <div className="relative z-10 mx-auto flex min-h-[88vh] max-w-7xl flex-col items-center justify-center px-6 pb-10 pt-28 text-center text-white md:px-8 md:pt-32">
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-4 inline-flex w-fit items-center gap-3 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-xs font-medium uppercase tracking-[0.24em] text-cyan-100 shadow-[0_0_30px_rgba(34,211,238,0.15)] backdrop-blur-md md:text-sm"
+            className="mb-3 inline-flex w-fit items-center gap-3 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-[0.72rem] font-medium uppercase tracking-[0.24em] text-cyan-100 shadow-[0_0_30px_rgba(34,211,238,0.15)] backdrop-blur-md md:text-[0.8rem]"
           >
             <span className="h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.95)]"></span>
             TECNOLOGIA EN FIBRA DE VIDRIO
@@ -34,10 +34,12 @@ function Home() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.95, delay: 0.1 }}
-            className="max-w-[13ch] text-[2.4rem] font-black leading-[0.88] tracking-[-0.075em] text-slate-100 drop-shadow-[0_10px_35px_rgba(0,0,0,0.35)] sm:text-[2.85rem] md:text-[3.2rem] lg:text-[3.45rem]"
+            className="mx-auto max-w-4xl text-[2.15rem] font-black leading-[0.92] tracking-[-0.07em] text-slate-100 sm:text-[2.7rem] md:text-[3.2rem] lg:text-[3.7rem]"
           >
-            <span className="block text-cyan-50/95">CREAMOS ESPACIOS QUE</span>
-            <span className="mt-1 block bg-[linear-gradient(135deg,#8be9ff_0%,#22d3ee_22%,#3b82f6_58%,#60a5fa_82%,#fb923c_100%)] bg-clip-text text-transparent [text-shadow:0_0_30px_rgba(56,189,248,0.3)]">
+            <span className="inline-block rounded-[1rem] border border-white/10 bg-[rgba(4,10,18,0.28)] px-4 py-2 bg-[linear-gradient(180deg,#f4f8fb_0%,#dde6ee_36%,#91a1b2_100%)] bg-clip-text text-transparent shadow-[0_8px_28px_rgba(0,0,0,0.18)] backdrop-blur-[4px] [text-shadow:0_4px_20px_rgba(0,0,0,0.28)]">
+              CREAMOS ESPACIOS QUE
+            </span>
+            <span className="mt-5 inline-block rounded-[1rem] border border-slate-300/12 bg-[rgba(4,10,18,0.24)] px-4 py-2 bg-[linear-gradient(180deg,#203a57_0%,#102033_34%,#163553_72%,#355684_100%)] bg-clip-text text-transparent shadow-[0_8px_28px_rgba(0,0,0,0.2)] backdrop-blur-[4px] [text-shadow:0_0_18px_rgba(8,15,26,0.18)]">
               TRANSFORMAN EXPERIENCIAS
             </span>
           </motion.h1>
@@ -46,7 +48,7 @@ function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.28, duration: 0.9 }}
-            className="mt-5 max-w-xl text-lg leading-relaxed text-slate-200 md:max-w-2xl md:text-xl"
+            className="mx-auto mt-5 max-w-3xl rounded-[1rem] border border-white/10 bg-[rgba(4,10,18,0.2)] px-4 py-2.5 text-[1.02rem] leading-relaxed text-slate-100 backdrop-blur-[3px] md:text-[1.15rem]"
           >
             Parques acuaticos, esculturas y proyectos unicos que combinan ingenieria, narrativa visual y construccion de alto impacto.
           </motion.p>
@@ -55,21 +57,24 @@ function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.45, duration: 0.8 }}
-            className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center"
+            className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center"
           >
-            <a
-              href="/proyectos"
+            <Link
+              to="/proyectos"
               className="group relative overflow-hidden rounded-2xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_55%,#1d4ed8_100%)] px-8 py-4 text-base font-bold text-white shadow-[0_18px_45px_rgba(37,99,235,0.35)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(34,211,238,0.38)]"
             >
               <span className="absolute inset-0 -translate-x-full bg-[linear-gradient(120deg,transparent_20%,rgba(255,255,255,0.35)_50%,transparent_80%)] opacity-0 transition duration-500 group-hover:translate-x-full group-hover:opacity-100"></span>
               <span className="relative z-10">Ver proyectos</span>
-            </a>
+            </Link>
 
-            <button className="group rounded-2xl border border-white/25 bg-white/10 px-8 py-4 text-base font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-cyan-300/70 hover:bg-white/18 hover:shadow-[0_18px_40px_rgba(15,23,42,0.28)]">
+            <Link
+              to="/contacto"
+              className="group rounded-2xl border border-white/25 bg-white/10 px-8 py-4 text-base font-semibold text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18)] backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-cyan-300/70 hover:bg-white/18 hover:shadow-[0_18px_40px_rgba(15,23,42,0.28)]"
+            >
               <span className="bg-[linear-gradient(135deg,#dff9ff_0%,#c9f7ff_65%,#8be9ff_100%)] bg-clip-text text-transparent">
                 Cotizar proyecto
               </span>
-            </button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -102,9 +107,12 @@ function Home() {
                 Desarrollamos proyectos recreativos, tematicos y estructurales pensados para transformar espacios en experiencias memorables. Aqui resumimos nuestra propuesta con una mirada clara: diseno, fabricacion e instalacion de soluciones que equilibran impacto visual, funcionalidad y durabilidad.
               </p>
               <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <button className="rounded-xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_55%,#1d4ed8_100%)] px-4 py-2 text-[0.75rem] font-semibold uppercase tracking-[0.08em] text-white shadow-md transition duration-300 hover:-translate-y-1">
+              <Link
+                to="/servicios"
+                className="rounded-xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_55%,#1d4ed8_100%)] px-4 py-2 text-center text-[0.75rem] font-semibold uppercase tracking-[0.08em] text-white shadow-md transition duration-300 hover:-translate-y-1"
+              >
                 Ver todos los servicios
-              </button>
+              </Link>
 
               <div className="flex items-center gap-3 text-[0.78rem] font-medium uppercase tracking-[0.18em] text-slate-400">
                 <span className="h-px w-12 bg-gradient-to-r from-cyan-300 to-orange-400"></span>
@@ -269,13 +277,13 @@ function Home() {
                       <p className="text-sm leading-6 text-slate-200">
                         {item.description}
                       </p>
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         className="mt-5 inline-flex items-center gap-3 rounded-2xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_58%,#f97316_100%)] px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-slate-950 transition duration-300 hover:-translate-y-0.5"
                       >
                         Ver proyecto
                         <span className="text-base leading-none">+</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -288,12 +296,12 @@ function Home() {
               Cada proyecto destacado funciona aqui como una muestra resumida. La galeria completa y el detalle tecnico viviran en la pagina de proyectos.
             </p>
 
-            <a
-              href="/proyectos"
+            <Link
+              to="/proyectos"
               className="rounded-2xl border border-cyan-300/20 bg-[linear-gradient(135deg,rgba(34,211,238,0.12),rgba(59,130,246,0.12),rgba(249,115,22,0.12))] px-7 py-4 text-sm font-bold uppercase tracking-[0.14em] text-cyan-100 shadow-[0_14px_35px_rgba(15,23,42,0.18)] transition duration-300 hover:-translate-y-1 hover:border-cyan-300/45 hover:text-white"
             >
               Explorar proyectos
-            </a>
+            </Link>
           </div>
         </div>
       </section>
