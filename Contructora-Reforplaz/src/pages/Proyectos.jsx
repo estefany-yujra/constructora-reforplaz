@@ -281,8 +281,7 @@ function Proyectos() {
                   PROYECTOS PREPARADO PARA CRECER BIEN
                 </h2>
                 <p className="mt-2 max-w-2xl text-[0.95rem] leading-7 text-slate-200">
-                  La base ya queda organizada por categorias y lista para recibir mas
-                  imagenes, mejores iconos o una futura vista ampliada por imagen.
+                  ...
                 </p>
               </div>
 
