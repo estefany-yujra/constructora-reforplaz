@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+@layer components {
+  .site-copy :is(h1, h2, h3, h4, h5, h6) {
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .site-copy p {
+    text-align: justify;
+    text-wrap: pretty;
+    hyphens: auto;
+  }
+
+  .site-copy :is(ul, ol) {
+    text-align: center;
+  }
+
+  .site-copy .section-title,
+  .site-copy .section-copy {
+    margin-inline: auto;
+  }
+
+  .site-copy .section-title,
+  .site-copy .section-copy,
+  .site-copy .section-kicker {
+    text-align: left;
+  }
+
+  .site-copy .hero-copy .section-title,
+  .site-copy .hero-copy .section-copy,
+  .site-copy .hero-copy .section-kicker {
+    text-align: center;
+  }
+
+  @media (min-width: 1024px) {
+    .site-copy .section-title {
+      width: 100%;
+      max-width: 100%;
+      text-wrap: balance;
+    }
+
+    .site-copy .section-copy {
+      max-width: 72ch !important;
+      width: 100%;
+    }
+
+    .site-copy .hero-copy .section-title,
+    .site-copy .hero-copy .section-copy {
+      width: auto;
+    }
+  }
+}

@@ -111,7 +111,7 @@ const valuePoints = [
 
 function Servicios() {
   return (
-    <main className="overflow-hidden bg-[#04101c] text-white">
+    <main className="site-copy overflow-hidden bg-[#04101c] text-white">
       <section className="relative isolate overflow-hidden border-b border-white/6">
         <img
           src={service8}
@@ -122,7 +122,7 @@ function Servicios() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_24%),radial-gradient(circle_at_82%_18%,rgba(249,115,22,0.1),transparent_18%)]"></div>
 
         <div className="relative mx-auto max-w-5xl px-6 pb-10 pt-24 text-center md:px-8 md:pb-12 md:pt-28">
-          <div className="mx-auto max-w-3xl">
+          <div className="hero-copy mx-auto max-w-3xl">
             <MotionDiv
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -133,11 +133,11 @@ function Servicios() {
                 Servicios
               </div>
 
-              <h1 className="mt-3 text-[2.2rem] font-black leading-none tracking-[-0.07em] text-slate-50 sm:text-[2.8rem] md:text-[3.1rem]">
+              <h1 className="section-title mt-3 text-[2.2rem] font-black leading-none tracking-[-0.07em] text-slate-50 sm:text-[2.8rem] md:text-[3.1rem]">
                 NUESTROS SERVICIOS
               </h1>
 
-              <p className="mx-auto mt-3 max-w-2xl text-[0.98rem] leading-8 text-slate-200 md:text-[1.02rem]">
+              <p className="section-copy mx-auto mt-3 max-w-2xl text-[0.98rem] leading-8 text-slate-200 md:text-[1.02rem]">
                 Soluciones en fibra de vidrio para proyectos recreativos, tematicos y
                 estructurales con enfoque visual, tecnico y funcional.
               </p>
@@ -202,13 +202,13 @@ function Servicios() {
 
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-18">
           <div className="max-w-3xl">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
+            <p className="section-kicker text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
               Lineas de servicio
             </p>
-            <h2 className="mt-3 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.45rem]">
+            <h2 className="section-title mt-3 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.45rem]">
               SERVICIOS PENSADOS PARA RESOLVER Y DESTACAR
             </h2>
-            <p className="mt-4 max-w-2xl text-[0.98rem] leading-8 text-slate-300">
+            <p className="section-copy mt-4 max-w-2xl text-[0.98rem] leading-8 text-slate-300">
               Organizamos nuestra propuesta en lineas claras para que sea facil entender
               que hacemos, donde aportamos valor y como cada servicio puede adaptarse a
               distintos tipos de proyecto.
@@ -259,13 +259,13 @@ function Servicios() {
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-18">
           <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
-              <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
+              <p className="section-kicker text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
                 Como trabajamos
               </p>
-              <h2 className="mt-3 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.35rem]">
+              <h2 className="section-title mt-3 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.35rem]">
                 UN PROCESO CLARO DE PRINCIPIO A FIN
               </h2>
-              <p className="mt-4 max-w-xl text-[0.98rem] leading-8 text-slate-300">
+              <p className="section-copy mt-4 max-w-xl text-[0.98rem] leading-8 text-slate-300">
                 El servicio no se limita a fabricar una pieza. Buscamos desarrollar una
                 respuesta completa, bien pensada y capaz de llegar al resultado final con
                 coherencia tecnica y visual.
@@ -307,10 +307,10 @@ function Servicios() {
 
         <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-8 md:py-18">
           <div className="max-w-3xl">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
+            <p className="section-kicker text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
               Valor diferencial
             </p>
-            <h2 className="mt-3 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.35rem]">
+            <h2 className="section-title mt-3 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.35rem]">
               LO QUE APORTA NUESTRO SERVICIO
             </h2>
           </div>
@@ -346,13 +346,13 @@ function Servicios() {
           <div className="rounded-[1.85rem] border border-white/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_20px_50px_rgba(0,0,0,0.2)] backdrop-blur-md md:p-8">
             <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-3xl">
-                <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
+                <p className="section-kicker text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
                   Del servicio al resultado
                 </p>
-                <h2 className="mt-3 text-[1.65rem] font-black leading-[0.94] tracking-[-0.06em] text-white md:text-[2rem]">
+                <h2 className="section-title mt-3 text-[1.65rem] font-black leading-[0.94] tracking-[-0.06em] text-white md:text-[2rem]">
                   CADA SERVICIO TOMA FORMA EN PROYECTOS REALES
                 </h2>
-                <p className="mt-3 text-[0.98rem] leading-7 text-slate-200">
+                <p className="section-copy mt-3 text-[0.98rem] leading-7 text-slate-200">
                   Nuestra mejor manera de demostrar lo que hacemos es mostrar como esas
                   soluciones se convierten en proyectos visibles, funcionales y bien
                   desarrollados dentro del espacio final.
@@ -377,10 +377,10 @@ function Servicios() {
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
             Cotizacion
           </p>
-          <h2 className="mt-4 text-[2rem] font-black leading-[0.92] tracking-[-0.06em] text-white md:text-[2.45rem]">
+          <h2 className="section-title mt-4 text-[2rem] font-black leading-[0.92] tracking-[-0.06em] text-white md:text-[2.45rem]">
             CUENTANOS LO QUE NECESITAS
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-[0.98rem] leading-8 text-slate-300">
+          <p className="section-copy mx-auto mt-4 max-w-2xl text-[0.98rem] leading-8 text-slate-300">
             Podemos ayudarte a desarrollar una solucion adaptada al tipo de espacio, al
             uso esperado y a la experiencia que quieres implementar.
           </p>

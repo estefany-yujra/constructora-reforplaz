@@ -77,9 +77,9 @@ const categories = [
   },
   {
     slug: "tanques",
-    title: "TANQUES",
+    title: "TANQUES DE AGUA",
     concept: "Soluciones tecnicas",
-    icon: "TK",
+    icon: "TA",
     description:
       "Los tanques representan la parte mas tecnica y estructural del portafolio. Son soluciones desarrolladas para responder a necesidades concretas de capacidad, resistencia y confiabilidad, manteniendo un estandar de fabricacion alineado a la propuesta de Industrias Reforplaz."
   }
@@ -149,7 +149,7 @@ function Proyectos() {
   }, [activeProject])
 
   return (
-    <main className="overflow-hidden bg-[#040d16] text-white">
+    <main className="site-copy overflow-hidden bg-[#040d16] text-white">
       <section className="relative isolate overflow-hidden border-b border-white/6">
         <div className="absolute inset-0 bg-[linear-gradient(180deg,#04101c_0%,#061829_52%,#08111d_100%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_24%),radial-gradient(circle_at_82%_12%,rgba(59,130,246,0.12),transparent_18%)]"></div>
@@ -168,12 +168,12 @@ function Proyectos() {
             initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.85, delay: 0.08 }}
-            className="mx-auto mt-2 max-w-3xl"
+            className="hero-copy mx-auto mt-2 max-w-3xl"
           >
-            <h1 className="text-[2.2rem] font-black tracking-[-0.08em] text-slate-50 sm:text-[2.8rem] md:text-[3.15rem]">
+            <h1 className="section-title text-[2.2rem] font-black tracking-[-0.08em] text-slate-50 sm:text-[2.8rem] md:text-[3.15rem]">
               NUESTRO PORTAFOLIO
             </h1>
-            <p className="mx-auto mt-2 max-w-2xl text-[0.98rem] leading-7 text-slate-300 md:text-[1.02rem]">
+            <p className="section-copy mx-auto mt-2 max-w-2xl text-[0.98rem] leading-7 text-slate-300 md:text-[1.02rem]">
               Una seleccion organizada por categorias para presentar cada linea de trabajo
               con claridad, peso visual y una experiencia de exploracion mas cuidada.
             </p>
@@ -315,10 +315,10 @@ function Proyectos() {
             </p>
             <div className="mt-3 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-3xl">
-                <h2 className="text-[1.45rem] font-black leading-none tracking-[-0.06em] text-white md:text-[1.75rem]">
+                <h2 className="section-title text-[1.45rem] font-black leading-none tracking-[-0.06em] text-white md:text-[1.75rem]">
                   PROYECTOS PREPARADO PARA CRECER BIEN
                 </h2>
-                <p className="mt-2 max-w-2xl text-[0.95rem] leading-7 text-slate-200">
+                <p className="section-copy mt-2 max-w-2xl text-[0.95rem] leading-7 text-slate-200">
                   ...
                 </p>
               </div>

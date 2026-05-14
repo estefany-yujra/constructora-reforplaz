@@ -52,7 +52,7 @@ const contactItems = [
 
 function Contacto() {
   return (
-    <div className="min-h-screen bg-[linear-gradient(180deg,#08101c_0%,#0b1628_36%,#08111f_100%)] px-8 pt-28 text-white">
+    <div className="site-copy min-h-screen bg-[linear-gradient(180deg,#08101c_0%,#0b1628_36%,#08111f_100%)] px-8 pt-28 text-white">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -165,7 +165,7 @@ function Contacto() {
                       </p>
                     </div>
 
-                    <div className="min-w-[108px] text-right">
+                    <div className="min-w-[108px] text-center">
                       <p className="text-[0.82rem] font-semibold uppercase tracking-[0.18em] text-slate-100">
                         {item.name}
                       </p>

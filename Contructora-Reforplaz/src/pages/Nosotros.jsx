@@ -8,7 +8,7 @@ import proyecto4 from "../assets/images/proyectos/servicio4.jpeg"
 import proyecto5 from "../assets/images/proyectos/servicio5.png"
 import proyecto6 from "../assets/images/proyectos/servicio6.jpeg"
 import proyecto7 from "../assets/images/proyectos/servicio7.png"
-import equipoImagen from "../assets/images/proyectos/servicio8.JPG"
+import equipoImagen from "../assets/images/proyectos/servicios.png"
 
 const MotionDiv = motion.div
 
@@ -83,7 +83,7 @@ function Nosotros() {
   const [selectedProject, setSelectedProject] = useState(gallery[0])
 
   return (
-    <main className="bg-[#04111d] text-slate-100">
+    <main className="site-copy bg-[#04111d] text-slate-100">
       <section className="relative overflow-hidden">
         <img
           src={equipoImagen}
@@ -245,7 +245,7 @@ function Nosotros() {
                     onMouseEnter={() => setSelectedProject(project)}
                     onFocus={() => setSelectedProject(project)}
                     onClick={() => setSelectedProject(project)}
-                    className={`group w-full overflow-hidden rounded-[1.6rem] border text-left transition duration-300 ${
+                    className={`group w-full overflow-hidden rounded-[1.6rem] border text-center transition duration-300 ${
                       isActive
                         ? "border-cyan-300/60 shadow-[0_18px_45px_rgba(8,145,178,0.28)]"
                         : "border-white/8 hover:border-orange-300/45"

@@ -8,14 +8,14 @@ import proyecto3 from "../assets/images/proyecto3.jpg"
 
 function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="site-copy overflow-hidden">
       {/* HERO */}
       <section className="relative min-h-[88vh] w-full overflow-hidden">
         <video autoPlay loop muted className="absolute h-full w-full object-cover">
           <source src={videoBg} type="video/mp4" />
         </video>
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_26%),radial-gradient(circle_at_78%_18%,rgba(37,99,235,0.16),transparent_24%),linear-gradient(180deg,rgba(4,10,18,0.16)_0%,rgba(4,10,18,0.08)_42%,rgba(4,10,18,0.22)_100%)]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.1),transparent_22%),radial-gradient(circle_at_78%_18%,rgba(37,99,235,0.12),transparent_20%),linear-gradient(180deg,rgba(3,9,16,0.58)_0%,rgba(3,9,16,0.46)_42%,rgba(3,9,16,0.66)_100%)]"></div>
         <div className="absolute left-[8%] top-[18%] h-52 w-52 rounded-full bg-cyan-400/14 blur-3xl"></div>
         <div className="absolute bottom-[14%] right-[10%] h-64 w-64 rounded-full bg-blue-600/14 blur-3xl"></div>
 
@@ -24,7 +24,7 @@ function Home() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-3 inline-flex w-fit items-center gap-3 rounded-full border border-white/15 bg-white/8 px-4 py-2 text-[0.72rem] font-medium uppercase tracking-[0.24em] text-cyan-100 shadow-[0_0_30px_rgba(34,211,238,0.15)] backdrop-blur-md md:text-[0.8rem]"
+            className="mb-4 inline-flex w-fit items-center gap-3 rounded-full border border-white/32 bg-[rgba(9,18,28,0.82)] px-5 py-2.5 text-[0.76rem] font-semibold uppercase tracking-[0.26em] text-[#ffffff] shadow-[0_12px_34px_rgba(0,0,0,0.34)] backdrop-blur-md [text-shadow:0_1px_0_rgba(255,255,255,0.28),0_2px_8px_rgba(0,0,0,0.52)] md:text-[0.9rem]"
           >
             <span className="h-2.5 w-2.5 rounded-full bg-cyan-300 shadow-[0_0_14px_rgba(103,232,249,0.95)]"></span>
             TECNOLOGIA EN FIBRA DE VIDRIO
@@ -49,7 +49,7 @@ function Home() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.28, duration: 0.9 }}
-            className="mx-auto mt-5 max-w-3xl rounded-[1rem] border border-white/10 bg-[rgba(4,10,18,0.34)] px-4 py-2.5 text-[1.02rem] leading-relaxed text-slate-100 backdrop-blur-[4px] md:text-[1.15rem]"
+            className="section-copy mx-auto mt-6 max-w-4xl rounded-[1.1rem] border border-white/15 bg-[rgba(8,17,28,0.56)] px-6 py-3.5 text-[1.08rem] leading-8 text-slate-50 shadow-[0_16px_40px_rgba(0,0,0,0.22)] backdrop-blur-[6px] [text-shadow:0_1px_0_rgba(255,255,255,0.12),0_3px_10px_rgba(0,0,0,0.45)] md:text-[1.26rem]"
           >
             Industrias Reforplaz desarrolla parques acuaticos, esculturas y soluciones en
             fibra de vidrio que combinan ingenieria, identidad visual y alto impacto.
@@ -77,117 +77,6 @@ function Home() {
                 Cotizar proyecto
               </span>
             </Link>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* SERVICIOS */}
-      <section className="relative overflow-hidden bg-[linear-gradient(135deg,#06111f_0%,#0a1d31_58%,#0f2740_100%)] py-18 text-white md:py-20">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.14),transparent_30%)]"></div>
-
-        <div className="relative mx-auto max-w-7xl px-6 md:px-8">
-          <div className="grid gap-5 lg:grid-cols-[0.96fr_0.84fr] lg:items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.35 }}
-              transition={{ duration: 0.75 }}
-              className="max-w-xl"
-            >
-              <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                Nuestros servicios
-              </span>
-
-              <h2 className="mt-4 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.35rem]">
-                <span className="block">SOLUCIONES QUE COMBINAN</span>
-                <span className="mt-1 block bg-[linear-gradient(135deg,#dff9ff_0%,#8be9ff_35%,#22d3ee_60%,#fb923c_100%)] bg-clip-text text-transparent">
-                  INGENIERIA, DIVERSION Y DISEÑO
-                </span>
-              </h2>
-
-              <p className="mt-5 max-w-lg text-[1.02rem] leading-8 text-slate-300 md:text-lg">
-                Desarrollamos proyectos recreativos, tematicos y estructurales pensados para transformar espacios en experiencias memorables. Aqui resumimos nuestra propuesta con una mirada clara: diseno, fabricacion e instalacion de soluciones que equilibran impacto visual, funcionalidad y durabilidad.
-              </p>
-              <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link
-                to="/servicios"
-                className="rounded-xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_55%,#1d4ed8_100%)] px-4 py-2 text-center text-[0.75rem] font-semibold uppercase tracking-[0.08em] text-white shadow-md transition duration-300 hover:-translate-y-1"
-              >
-                Ver todos los servicios
-              </Link>
-
-              <div className="flex items-center gap-3 text-[0.78rem] font-medium uppercase tracking-[0.18em] text-slate-400">
-                <span className="h-px w-12 bg-gradient-to-r from-cyan-300 to-orange-400"></span>
-                Soluciones a medida para cada espacio
-              </div>
-            </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 28 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.8 }}
-              className="relative lg:-mt-6"
-            >
-              <div className="absolute -left-5 -top-5 h-24 w-24 rounded-full bg-cyan-300/18 blur-3xl"></div>
-              <div className="absolute -bottom-5 -right-5 h-28 w-28 rounded-full bg-orange-400/15 blur-3xl"></div>
-
-              <div className="relative overflow-hidden rounded-[1.8rem] border border-white/10 bg-white/8 p-2.5 shadow-[0_24px_56px_rgba(0,0,0,0.3)] backdrop-blur-sm">
-                <img
-                  src={servicesImage}
-                  alt="Resumen visual de servicios"
-                  className="h-[340px] w-full rounded-[1.2rem] object-cover"
-                />
-
-                <div className="absolute inset-x-5 bottom-5 rounded-[1.2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(6,17,31,0.88),rgba(12,31,48,0.82))] p-3.5 shadow-[0_16px_35px_rgba(0,0,0,0.26)] backdrop-blur-md">
-                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-cyan-200">
-                    Enfoque integral
-                  </p>
-                  <p className="mt-1.5 max-w-[22ch] text-[0.95rem] font-bold leading-snug text-white">
-                    Del concepto a la instalacion final con una misma vision de impacto.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.25 }}
-            transition={{ duration: 0.75, delay: 0.05 }}
-            className="mt-8"
-          >
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {[
-                {
-                  title: "Juegos acuaticos",
-                  text: "Atracciones dinamicas para parques, piscinas y espacios recreativos."
-                },
-                {
-                  title: "Esculturas y tematizacion",
-                  text: "Piezas visuales que refuerzan identidad, narrativa y presencia."
-                },
-                {
-                  title: "Parques infantiles",
-                  text: "Zonas recreativas seguras, atractivas y pensadas para convivir."
-                },
-                {
-                  title: "Infraestructura complementaria",
-                  text: "Elementos de apoyo que completan la experiencia del proyecto."
-                }
-              ].map((item) => (
-                <div
-                  key={item.title}
-                  className="rounded-[1.35rem] border border-white/10 bg-white/6 p-4 shadow-[0_14px_34px_rgba(2,6,23,0.2)] backdrop-blur-sm"
-                >
-                  <div className="h-1.5 w-12 rounded-full bg-[linear-gradient(90deg,#22d3ee_0%,#f97316_100%)]"></div>
-                  <h3 className="mt-3 text-[1.02rem] font-bold text-white">{item.title}</h3>
-                  <p className="mt-1.5 text-sm leading-6 text-slate-300">{item.text}</p>
-                </div>
-              ))}
-            </div>
           </motion.div>
         </div>
       </section>
@@ -308,6 +197,117 @@ function Home() {
         </div>
       </section>
 
+      {/* SERVICIOS */}
+      <section className="relative overflow-hidden bg-[linear-gradient(135deg,#06111f_0%,#0a1d31_58%,#0f2740_100%)] py-18 text-white md:py-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.14),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.14),transparent_30%)]"></div>
+
+        <div className="relative mx-auto max-w-7xl px-6 md:px-8">
+          <div className="grid gap-5 lg:grid-cols-[0.96fr_0.84fr] lg:items-start">
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.35 }}
+              transition={{ duration: 0.75 }}
+              className="max-w-xl"
+            >
+              <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
+                Nuestros servicios
+              </span>
+
+              <h2 className="section-title mt-4 text-[2rem] font-black leading-[0.9] tracking-[-0.06em] text-white md:text-[2.35rem]">
+                <span className="block">SOLUCIONES QUE COMBINAN</span>
+                <span className="mt-1 block bg-[linear-gradient(135deg,#dff9ff_0%,#8be9ff_35%,#22d3ee_60%,#fb923c_100%)] bg-clip-text text-transparent">
+                  INGENIERIA, DIVERSION Y DISEÑO
+                </span>
+              </h2>
+
+              <p className="section-copy mt-5 max-w-lg text-[1.02rem] leading-8 text-slate-300 md:text-lg">
+                Desarrollamos proyectos recreativos, tematicos y estructurales pensados para transformar espacios en experiencias memorables. Aqui resumimos nuestra propuesta con una mirada clara: diseno, fabricacion e instalacion de soluciones que equilibran impacto visual, funcionalidad y durabilidad.
+              </p>
+              <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <Link
+                to="/servicios"
+                className="rounded-xl bg-[linear-gradient(135deg,#22d3ee_0%,#2563eb_55%,#1d4ed8_100%)] px-4 py-2 text-center text-[0.75rem] font-semibold uppercase tracking-[0.08em] text-white shadow-md transition duration-300 hover:-translate-y-1"
+              >
+                Ver todos los servicios
+              </Link>
+
+              <div className="flex items-center gap-3 text-[0.78rem] font-medium uppercase tracking-[0.18em] text-slate-400">
+                <span className="h-px w-12 bg-gradient-to-r from-cyan-300 to-orange-400"></span>
+                Soluciones a medida para cada espacio
+              </div>
+            </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 28 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.8 }}
+              className="relative lg:-mt-6"
+            >
+              <div className="absolute -left-5 -top-5 h-24 w-24 rounded-full bg-cyan-300/18 blur-3xl"></div>
+              <div className="absolute -bottom-5 -right-5 h-28 w-28 rounded-full bg-orange-400/15 blur-3xl"></div>
+
+              <div className="relative overflow-hidden rounded-[1.8rem] border border-white/10 bg-white/8 p-2.5 shadow-[0_24px_56px_rgba(0,0,0,0.3)] backdrop-blur-sm">
+                <img
+                  src={servicesImage}
+                  alt="Resumen visual de servicios"
+                  className="h-[340px] w-full rounded-[1.2rem] object-cover"
+                />
+
+                <div className="absolute inset-x-5 bottom-5 rounded-[1.2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(6,17,31,0.88),rgba(12,31,48,0.82))] p-3.5 shadow-[0_16px_35px_rgba(0,0,0,0.26)] backdrop-blur-md">
+                  <p className="text-[0.68rem] font-semibold uppercase tracking-[0.24em] text-cyan-200">
+                    Enfoque integral
+                  </p>
+                  <p className="mt-1.5 max-w-none text-left text-[0.95rem] font-bold leading-snug text-white">
+                    Del concepto a la instalacion final con una misma vision de impacto.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.75, delay: 0.05 }}
+            className="mt-5"
+          >
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                {
+                  title: "JUEGOS ACUATICOS",
+                  text: "Atracciones dinamicas para parques, piscinas y espacios recreativos."
+                },
+                {
+                  title: "ESCULTURAS Y ELEMENTOS TEMATICOS",
+                  text: "Piezas visuales que refuerzan identidad, narrativa y presencia."
+                },
+                {
+                  title: "PARQUES INFANTILES",
+                  text: "Zonas recreativas seguras, atractivas y pensadas para convivir."
+                },
+                {
+                  title: "INFRAESTRUCTURA COMPLEMENTARIA",
+                  text: "Elementos de apoyo que completan la experiencia del proyecto."
+                }
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[1.35rem] border border-white/10 bg-white/6 p-4 shadow-[0_14px_34px_rgba(2,6,23,0.2)] backdrop-blur-sm"
+                >
+                  <div className="h-1.5 w-12 rounded-full bg-[linear-gradient(90deg,#22d3ee_0%,#f97316_100%)]"></div>
+                  <h3 className="mt-3 text-[1.02rem] font-bold text-white">{item.title}</h3>
+                  <p className="mt-1.5 text-sm leading-6 text-slate-300">{item.text}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* EXPERIENCIA, PROCESO Y GARANTIA */}
       <section className="relative overflow-hidden bg-[linear-gradient(135deg,#08131f_0%,#0b1d2d_45%,#123554_100%)] py-20 text-white">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.16),transparent_28%),radial-gradient(circle_at_bottom_right,rgba(249,115,22,0.12),transparent_30%)]"></div>
@@ -319,15 +319,15 @@ function Home() {
             transition={{ duration: 0.8 }}
             className="mb-10 max-w-3xl"
           >
-            <span className="inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
+            <span className="section-kicker inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-cyan-200">
               Industria Reforplaz
             </span>
-            <h2 className="mt-4 text-[1.95rem] font-black leading-none tracking-[-0.07em] text-slate-100 md:text-[2.3rem]">
+            <h2 className="section-title mt-4 text-[1.95rem] font-black leading-none tracking-[-0.07em] text-slate-100 md:text-[2.3rem]">
               <span className="block whitespace-nowrap bg-[linear-gradient(135deg,#d7f7ff_0%,#67e8f9_38%,#60a5fa_74%,#fb923c_100%)] bg-clip-text text-transparent">
                 EXPERIENCIA, PROCESO Y GARANTIA
               </span>
             </h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
+            <p className="section-copy mt-4 max-w-2xl text-base leading-7 text-slate-300 md:text-lg">
               Convertimos ideas en espacios memorables con una metodologia clara, experiencia comprobada y ejecucion integral de principio a fin.
             </p>
           </motion.div>
@@ -352,7 +352,7 @@ function Home() {
                 <p className="mt-4 bg-[linear-gradient(135deg,#d7f7ff_0%,#67e8f9_38%,#60a5fa_74%,#fb923c_100%)] bg-clip-text text-[2rem] font-black leading-none tracking-[-0.05em] text-transparent">
                   {item.value}
                 </p>
-                <p className="mt-2 max-w-[18ch] text-sm font-medium leading-6 text-slate-300">
+                <p className="mt-2 max-w-none text-left text-sm font-medium leading-6 text-slate-300">
                   {item.label}
                 </p>
               </div>
@@ -364,17 +364,17 @@ function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.25 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="mt-12"
+            className="mt-7"
           >
             <div className="mb-6 flex items-center gap-4">
               <span className="h-px flex-1 bg-[linear-gradient(90deg,transparent_0%,rgba(34,211,238,0.45)_40%,rgba(249,115,22,0.45)_100%)]"></span>
               <span className="text-[0.72rem] font-semibold uppercase tracking-[0.3em] text-cyan-200">
-                Nuestro proceso
+                NUESTRO PROCESO
               </span>
               <span className="h-px flex-1 bg-[linear-gradient(90deg,rgba(34,211,238,0.45)_0%,rgba(249,115,22,0.45)_60%,transparent_100%)]"></span>
             </div>
 
-            <div className="grid gap-4 lg:grid-cols-3">
+            <div className="grid gap-3 lg:grid-cols-3">
               {[
                 {
                   step: "01",

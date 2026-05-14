@@ -1,9 +1,16 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { useState, useEffect } from "react"
 import logo from "../assets/images/logo.png"
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
+  const navItems = [
+    { label: "Inicio", to: "/" },
+    { label: "Nosotros", to: "/nosotros" },
+    { label: "Servicios", to: "/servicios" },
+    { label: "Proyectos", to: "/proyectos" },
+    { label: "Contacto", to: "/contacto" },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,17 +50,32 @@ function Navbar() {
             scrolled ? "text-gray-800" : "text-white"
           }`}
         >
-          {["Inicio", "Nosotros", "Servicios", "Proyectos", "Contacto"].map((item) => (
-            <li key={item}>
-              <Link
-                to={item === "Inicio" ? "/" : `/${item.toLowerCase()}`}
-                className="relative group"
+          {navItems.map((item) => (
+            <li key={item.label}>
+              <NavLink
+                to={item.to}
+                end={item.to === "/"}
+                className={({ isActive }) =>
+                  `relative group transition-colors duration-300 ${
+                    isActive
+                      ? "text-cyan-500"
+                      : scrolled
+                        ? "text-gray-800 hover:text-cyan-500"
+                        : "text-white hover:text-cyan-200"
+                  }`
+                }
               >
-                {item}
-
-                {/* underline animado */}
-                <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-              </Link>
+                {({ isActive }) => (
+                  <>
+                    {item.label}
+                    <span
+                      className={`absolute left-0 -bottom-1 h-[2px] bg-cyan-400 transition-all duration-300 ${
+                        isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
+                    ></span>
+                  </>
+                )}
+              </NavLink>
             </li>
           ))}
         </ul>
